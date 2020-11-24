@@ -84,4 +84,10 @@ const isDeveloper = ({ developer }) => nataly.developer ? console.log('IS DEVELO
 
 
 
+// REPETITIVE STRUCTURES: FOR
+console.log(`Al inicio del año ${nataly.nombre} pesa ${nataly.weight} kg`)
+
+console.log(`Al final del año ${nataly.nombre} pesa ${nataly.weight} kg`)
+
+
 
