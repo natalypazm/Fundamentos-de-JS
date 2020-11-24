@@ -123,4 +123,16 @@ while (nataly.weight > GOAL) {
     }
     days++
 }
-console.log(`Han pasado ${days} días para que ${nataly.nombre} baje 3kg.`)
+// console.log(`Han pasado ${days} días para que ${nataly.nombre} baje 3kg.`)
+
+//REPETITIVE STRUCTURES: DO-WHILE
+var count = 0
+const rains = () => Math.random() < 0.25
+
+do {
+    count++
+} while (!rains())
+
+//var frequency = count === 1 ? console.log(`Fuí a ver si llovía ${count} vez`) : console.log(`Fuí a ver si llovía ${count} veces`)
+var frequency = count === 1 ? 'vez' : 'veces'
+console.log(`Fuí a ver si llovía ${count} ${frequency}`)
