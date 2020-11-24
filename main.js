@@ -87,7 +87,21 @@ const isDeveloper = ({ developer }) => nataly.developer ? console.log('IS DEVELO
 // REPETITIVE STRUCTURES: FOR
 console.log(`Al inicio del año ${nataly.nombre} pesa ${nataly.weight} kg`)
 
-console.log(`Al final del año ${nataly.nombre} pesa ${nataly.weight} kg`)
+const INCREASED_WEIGHT = 0.2
+const DAYS_YEAR = 365
+
+const weightGain = persona => persona.weight += INCREASED_WEIGHT
+const slim_down = persona => persona.weight -= INCREASED_WEIGHT
+
+for (var i = 1; i <= DAYS_YEAR; i++) {
+    var random = Math.random();
+    if (random < 0.25) {
+        weightGain(nataly)
+    } else if (random < 0.5) {
+        slim_down(nataly)
+    }
+}
+console.log(`Al final del año ${nataly.nombre} pesa ${nataly.weight.toFixed(1)} kg`)
 
 
 
