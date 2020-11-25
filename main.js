@@ -90,7 +90,7 @@ const isDeveloper = ({ developer }) => nataly.developer ? console.log('IS DEVELO
 
 
 // REPETITIVE STRUCTURES: FOR
-console.log(`Al inicio del año ${nataly.nombre} pesa ${nataly.weight} kg`)
+//console.log(`Al inicio del año ${nataly.nombre} pesa ${nataly.weight} kg`)
 
 const INCREASED_WEIGHT = 0.2
 const DAYS_YEAR = 365
@@ -135,19 +135,47 @@ do {
 
 //var frequency = count === 1 ? console.log(`Fuí a ver si llovía ${count} vez`) : console.log(`Fuí a ver si llovía ${count} veces`)
 var frequency = count === 1 ? 'vez' : 'veces'
-console.log(`Fuí a ver si llovía ${count} ${frequency}`)
+//console.log(`Fuí a ver si llovía ${count} ${frequency}`)
 
 //CONDITIONAL MULTIPLE: SWITCH
-var sign = prompt('¿Cuál es tu signo?')
+//var sign = prompt('¿Cuál es tu signo?')
 
-switch (sign) {
-    case 'acuario':
-        console.log('Eres Acuario')
-        break
-    case 'piscis':
-        console.log('Eres piscis')
-        break
-    default:
-        console.log('No es un signo válido')
-        break
+// switch (sign) {
+//     case 'acuario':
+//         console.log('Eres Acuario')
+//         break
+//     case 'piscis':
+//         console.log('Eres piscis')
+//         break
+//     default:
+//         console.log('No es un signo válido')
+//         break
+// }
+
+//INTRODUCTION TO ARRAYS
+var alejandra = {
+    name: "Alejandra",
+    lastname: "Paz",
+    height: 1.67,
+}
+var nataly = {
+    name: "Nataly",
+    lastname: "Paz",
+    height: 1.66,
+}
+var abigail = {
+    name: "Abigail",
+    lastname: "Paz",
+    height: 1.65,
+}
+var valeria = {
+    name: "Valeria",
+    lastname: "Paz",
+    height: 1.65
+}
+var people = [alejandra, nataly, abigail, valeria]
+
+for (var i = 0; i < people.length; i++) {
+    var person = people[i]
+    console.log(`${person.name} mide ${person.height} mts.`)
 }
