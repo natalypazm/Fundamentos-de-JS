@@ -177,5 +177,17 @@ var people = [alejandra, nataly, abigail, valeria]
 
 for (var i = 0; i < people.length; i++) {
     var person = people[i]
-    console.log(`${person.name} mide ${person.height} mts.`)
+    //console.log(`${person.name} mide ${person.height} mts.`)
 }
+
+//FILTER A ARRAY
+//const isTall = person => person.height > 1.65
+const isTall = ({ height }) => height > 1.65
+const isSmall = ({ height }) => height <= 1.65
+// var tallPeople = people.filter(function (person) {
+//     return person.height > 1.65
+// })
+var tallPeople = people.filter(isTall)
+var SmallPeople = people.filter(isSmall)
+console.log(tallPeople)
+console.log(SmallPeople)
