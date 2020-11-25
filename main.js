@@ -136,3 +136,18 @@ do {
 //var frequency = count === 1 ? console.log(`Fuí a ver si llovía ${count} vez`) : console.log(`Fuí a ver si llovía ${count} veces`)
 var frequency = count === 1 ? 'vez' : 'veces'
 console.log(`Fuí a ver si llovía ${count} ${frequency}`)
+
+//CONDITIONAL MULTIPLE: SWITCH
+var sign = prompt('¿Cuál es tu signo?')
+
+switch (sign) {
+    case 'acuario':
+        console.log('Eres Acuario')
+        break
+    case 'piscis':
+        console.log('Eres piscis')
+        break
+    default:
+        console.log('No es un signo válido')
+        break
+}
