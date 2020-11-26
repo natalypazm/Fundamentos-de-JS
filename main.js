@@ -193,8 +193,8 @@ const isSmall = ({ height }) => height <= 1.65
 // })
 var tallPeople = people.filter(isTall)
 var SmallPeople = people.filter(isSmall)
-console.log(tallPeople)
-console.log(SmallPeople)
+//console.log(tallPeople)
+//console.log(SmallPeople)
 
 //TRANSFORM AN ARRAY
 // return an object because use ()
@@ -211,4 +211,4 @@ var peoplecms = people.map(transformHeightCms)
 
 const reducer = (accum, { quantityBooks }) => accum + quantityBooks
 var totalNumberBooks = people.reduce(reducer, 0)
-console.log(`They all have a total of ${totalNumberBooks} books`)
+//console.log(`They all have a total of ${totalNumberBooks} books`)
