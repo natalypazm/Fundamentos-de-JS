@@ -180,7 +180,7 @@ for (var i = 0; i < people.length; i++) {
     //console.log(`${person.name} mide ${person.height} mts.`)
 }
 
-//FILTER A ARRAY
+//FILTER AN ARRAY
 //const isTall = person => person.height > 1.65
 const isTall = ({ height }) => height > 1.65
 const isSmall = ({ height }) => height <= 1.65
@@ -191,3 +191,8 @@ var tallPeople = people.filter(isTall)
 var SmallPeople = people.filter(isSmall)
 console.log(tallPeople)
 console.log(SmallPeople)
+
+//TRANSFORM AN ARRAY
+// return an object because use ()
+const transformHeightCms = ({ height }) => ({ ...person, height: height * 100 })
+var peoplecms = people.map(transformHeightCms)
