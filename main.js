@@ -157,21 +157,25 @@ var alejandra = {
     name: "Alejandra",
     lastname: "Paz",
     height: 1.67,
+    quantityBooks: 111
 }
 var nataly = {
     name: "Nataly",
     lastname: "Paz",
     height: 1.66,
+    quantityBooks: 34
 }
 var abigail = {
     name: "Abigail",
     lastname: "Paz",
     height: 1.65,
+    quantityBooks: 69
 }
 var valeria = {
     name: "Valeria",
     lastname: "Paz",
-    height: 1.65
+    height: 1.65,
+    quantityBooks: 506
 }
 var people = [alejandra, nataly, abigail, valeria]
 
@@ -196,3 +200,15 @@ console.log(SmallPeople)
 // return an object because use ()
 const transformHeightCms = ({ height }) => ({ ...person, height: height * 100 })
 var peoplecms = people.map(transformHeightCms)
+
+
+//REDUCE AN ARRAY TO A VALUE
+
+// var accum = 0
+// for (var i = 0; i < people.length; i++) {
+//     accum += people[i].quantityBooks
+// }
+
+const reducer = (accum, { quantityBooks }) => accum + quantityBooks
+var totalNumberBooks = people.reduce(reducer, 0)
+console.log(`They all have a total of ${totalNumberBooks} books`)
